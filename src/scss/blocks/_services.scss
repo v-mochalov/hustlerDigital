@@ -1,0 +1,184 @@
+.services {
+    background: url("../img/greenbg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px;
+    &__top {
+        display: flex;
+    }
+
+    &__remark {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #000000;
+        max-width: 424px;
+        margin-top: 13px;
+    }
+
+    &__hashtag {
+        margin-left: 105px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+
+    }
+
+    &__tag {
+        border: 1px solid #000000;
+        border-radius: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 16px 48px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        height: 52px;
+
+        &:nth-child(4) {
+            margin-left: 40px;
+        }
+    }
+}
+
+//Close acordeon
+$accordeonWidth: 100%; //With accordeon --- Длина акордеона
+$accordeonPadding: 24px 28px 24px 24px; //Padding accordeon --- Внутренние отступы
+$accordeonRadius: 0px; //Border radius
+$accordeonColorMain: #000000; //Text color
+$accordeonColorBg: transparent; // Bg color
+$arrowsColor: #000;
+//Open acordeon
+$acordeonMainColor: $accent;
+$openAcordeonTextColor: #ffffff;
+$openAcordeonBgColor: #000000;
+$arrowsColorClose: $whiteColor;
+
+
+
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 83px auto 0;
+
+    @include md-d {
+        margin: 50px auto 0;
+    }
+}
+
+.one {
+    width: 100%;
+}
+
+.block__item {
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    &:first-child {
+        border-top: 1px solid #000000;
+    }
+}
+
+.block__title {
+    position: relative;
+
+    color: $accordeonColorMain;
+    border-radius: $accordeonRadius;
+    padding: $accordeonPadding;
+    background: $accordeonColorBg;
+    text-align: left;
+    cursor: pointer;
+    //text settings
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: 0.02em;
+    //any settings
+    transition: all 0.2s linear;
+
+    @include md-d {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        padding: 15px 51px 15px 18px;
+    }
+}
+
+.block__title::before,
+.block__title::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    transition: all 0.3s ease 0s;
+
+    @include md-d {
+        width: 12px;
+    }
+}
+
+.block__title:before {
+    transform: rotate(40deg);
+    right: 27px;
+}
+
+.block__title::after {
+    transform: rotate(-40deg);
+    right: 42px;
+
+    @include md-d {
+        right: 36px;
+    }
+}
+
+.block__title.active::before,
+.block__title.active::after {
+    background-color: $whiteColor;
+}
+
+.block__title.active::before {
+    transform: rotate(-40deg);
+}
+
+.block__title.active::after {
+    transform: rotate(40deg);
+}
+
+.block__title.active {
+    color: $whiteColor;
+    background: #000;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+}
+
+.block__text {
+    padding-left: 24px;
+    padding-bottom: 81px;
+    display: none;
+    color: $openAcordeonTextColor;
+    background: $openAcordeonBgColor;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+}

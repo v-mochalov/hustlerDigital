@@ -1,0 +1,47 @@
+.intro {
+  background: url("../img/introbg.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding-bottom: 239px;
+  overflow: hidden;
+  &__container {
+    position: relative;
+  }
+  &__wrapper {
+    padding-top: 241px;
+  }
+  &__title {
+    max-width: 840px;
+    span {
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 1px $accent;
+      opacity: 1;
+    }
+  }
+  &__subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #ffffff;
+    margin-top: 40px;
+    max-width: 675px;
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: -340px;
+    width: 593px;
+    max-height: 1091px;
+  }
+  &__btn {
+    margin-top: 71px;
+    position: relative;
+    z-index: 5;
+  }
+  &__downline{
+
+  }
+}

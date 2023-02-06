@@ -1,0 +1,79 @@
+.video {
+  background: url("../img/videobg.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  padding-top: 202px;
+  padding-bottom: 185px;
+  //border img
+  &__upline {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    img {
+      width: 100vw;
+      height: 120px;
+    }
+  }
+  &__downline {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+    img {
+     height: 120px;
+      width: 100vw;
+    }
+  }
+  //content
+  &__wrapper {
+    position: relative;
+  }
+  &__main {
+    width: 100%;
+  }
+  &__text {
+    max-width: 657px;
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__arrow{
+    margin-top: 62px;
+  }
+  &__content{
+    position: absolute;
+    width: 498px;
+    height: 703px;
+    background: #000;
+    z-index: 2;
+    right: 0;
+    top: -190px;
+  }
+  &__scotch{
+    position: absolute;
+    right: -73px;
+    top: -96px;
+  }
+  &__circle{
+    position: absolute;
+    right: -75px;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    transform: translateY(46%);
+  }
+  &__img{
+    margin-top: 130px;
+  }
+}

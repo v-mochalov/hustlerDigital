@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "mont700Eng";
+  src: url("../../src/fonts/drukWideBoldEn.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "mont500";
+  src: url("../../src/fonts/drukWideMedium.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "mont700";
+  src: url("../../src/fonts/drukWideBold.otf");
+  font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');body {
+  font-family: "mont500";
+  font-style: normal;
+}
+
+h1 {
+  font-family: "mont700";
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  @include md-d {
+    
+  }
+}
+h2 {
+  font-size: 55px;
+  line-height: 70px;
+  span {
+    color: $accent;
+  }
+  @include md-d {
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+}

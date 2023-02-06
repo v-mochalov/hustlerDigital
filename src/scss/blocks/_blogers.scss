@@ -1,0 +1,117 @@
+.blogers {
+    position: relative;
+    background: url("../img/greenbg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 170px;
+
+    &__border {
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        top: -119px;
+        transform: rotate(180deg);
+
+        img {
+            height: 120px;
+            width: 100vw;
+        }
+    }
+
+    &__upline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__hashtag {
+        display: flex;
+    }
+
+    &__tag {
+        margin-left: 20px;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 41px;
+    }
+
+    &__box {
+        width: 306px;
+        height: 246px;
+        border: 1px solid #000000;
+        margin-bottom: 25px;
+    }
+    &__img{
+        img{
+            filter: grayscale(100%);
+            transition: 0.3s linear;
+            &:hover{
+                filter: grayscale(0%);
+                transition: 0.3s linear;
+
+            }
+        }
+    }
+    &__downline {
+        display: flex;
+        padding-left: 24px;
+        padding-top: 16px;
+        padding-right: 24px;
+        justify-content: space-between;
+    }
+
+    &__followers {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 114.5%;
+        color: #000000;
+    }
+
+    &__name {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 114.5%;
+        color: #000000;
+        opacity: 0.5;
+    }
+
+    &__show-more {
+        width: 100%;
+        height: 100%;
+        padding: 24px 17px 17px 24px;
+        position: relative;
+        &:hover{
+            cursor: pointer;
+        }
+        p {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 114.5%;
+            color: #000000;
+        }
+    }
+    &__arrow{
+        position: absolute;
+        right: 17px;
+        bottom: 17px;
+    }
+    &__danger{
+        height: 300px;
+        position: absolute;
+        width: 2440px;
+        z-index: 1;
+        bottom: 88px;
+    left: -170px;
+    }
+}
