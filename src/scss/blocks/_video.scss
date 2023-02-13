@@ -1,11 +1,13 @@
 .video {
   background: url("../img/videobg.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   position: relative;
   padding-top: 202px;
   padding-bottom: 185px;
-  //border img
+  @include xl-d{
+    padding-top: 120px;
+  }
   &__upline {
     position: absolute;
     width: 100vw;
@@ -30,6 +32,10 @@
   //content
   &__wrapper {
     position: relative;
+    @include lg-d{
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
   &__main {
     width: 100%;
@@ -47,9 +53,32 @@
     line-height: 27px;
     text-transform: uppercase;
     color: #ffffff;
+    @include xl-d{
+      font-size: 16px;
+      max-width: 614px;
+      height: 384px;
+    }
+    @include lg-d{
+      max-width: 100%;
+      align-self: center;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+  }
+  &__paragraph{
+    @include lg-d{
+      margin-bottom: 20px;
+    }
+    @include md-d{
+      margin-bottom: 12px;
+    }
   }
   &__arrow{
     margin-top: 62px;
+    @include lg-d{
+      display: none;
+    }
   }
   &__content{
     position: absolute;
@@ -59,6 +88,16 @@
     z-index: 2;
     right: 0;
     top: -190px;
+    @include xl-d{
+      width: 389px;
+      height: 550px;
+      top: -92px;
+    }
+    @include lg-d{
+       position: relative;
+       align-self: center;
+       top: 15px;
+    }
   }
   &__scotch{
     position: absolute;
@@ -72,8 +111,17 @@
     width: 150px;
     height: 150px;
     transform: translateY(46%);
+    @include lg-d{
+      width: 60px;
+      height: 60px;
+      right: 100%;
+      transform: translate(50%, 50%);
+    }
   }
   &__img{
     margin-top: 130px;
+    @include sm-d{
+      margin-top: 180px;
+    }
   }
 }

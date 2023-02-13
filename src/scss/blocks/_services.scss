@@ -3,8 +3,17 @@
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
+
     &__top {
         display: flex;
+
+        @include lg-d {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        h2 {}
     }
 
     &__remark {
@@ -27,6 +36,15 @@
         justify-content: space-between;
         margin-top: 20px;
 
+        @include xl-d {
+            margin-left: 20px;
+        }
+
+        @include lg-d {
+            margin-left: 0;
+            margin-top: 40px;
+            justify-content: flex-start;
+        }
     }
 
     &__tag {
@@ -46,6 +64,27 @@
 
         &:nth-child(4) {
             margin-left: 40px;
+
+            @include xl-d {
+                margin-left: 0;
+            }
+        }
+
+        @include xl-d {
+            padding: 16px 24px;
+            width: 33%;
+        }
+
+        @include lg-d {
+            width: auto;
+            margin-bottom: 8px;
+            margin-right: 10px;
+            padding: 8px 16px;
+            font-size: 16px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -85,6 +124,7 @@ $arrowsColorClose: $whiteColor;
 .block__item {
     width: 100%;
     border-bottom: 1px solid #000000;
+
     &:first-child {
         border-top: 1px solid #000000;
     }
@@ -110,9 +150,10 @@ $arrowsColorClose: $whiteColor;
 
     @include md-d {
         font-weight: 500;
-        font-size: 12px;
-        line-height: 150%;
-        padding: 15px 51px 15px 18px;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        padding: 16px 16px 16px 16px;
     }
 }
 
@@ -180,5 +221,17 @@ $arrowsColorClose: $whiteColor;
     line-height: 36px;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-
+    @include xl-d{
+        font-size: 18px;
+    }
+    @include md-d{
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 16px;
+        padding-bottom: 48px;
+        padding-top: 16px;
+    }
+    @include xl-d{
+        font-size: 14px;
+    }
 }

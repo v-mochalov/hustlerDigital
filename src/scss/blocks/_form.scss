@@ -4,6 +4,12 @@
     background-position: center;
     padding-top: 120px;
     padding-bottom: 100px;
+    @include xl-d{
+        padding-top: 80px;
+    }
+    @include sm-d{
+        padding-top: 73px;
+    }
     &__main {
         margin-top: 40px;
     }
@@ -11,6 +17,9 @@
     &__contain {
         display: flex;
         justify-content: center;
+        @include md-d{
+            flex-direction: column;
+        }
     }
     &__main{
         display: flex;
@@ -25,6 +34,9 @@
         flex-direction: column;
         width: 526px;
         margin-right: 24px;
+        @include md-d{
+            width: 100%;
+        }
         input {
             font-family: 'Montserrat';
             font-style: normal;
@@ -42,7 +54,9 @@
             margin-bottom: 24px;
             padding-left: 30px;
             transition: 0.3s linear;
-
+            @include md-d{
+                margin-bottom: 16px;
+            }
             &:last-child{
                 margin-bottom: 0;
             }
@@ -57,7 +71,7 @@
                 color: #000000;
                 opacity: 0.6;
                 transition: 0.2s linear;
-
+               
             }
 
             &:active,
@@ -74,7 +88,10 @@
 
     &__right {
         width: 526px;
-
+        @include md-d{
+            width: 100%;    height: 140px;
+            margin-top: 16px;
+        }
         input {
             font-family: 'Montserrat';
             font-style: normal;
@@ -91,7 +108,12 @@
             backdrop-filter: blur(27px);
             padding-left: 30px;
             position: relative;
-            
+            @include md-d{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+                padding-left: 16px;
+            }
             &::placeholder {
                 position: absolute;
                 left: 30px;

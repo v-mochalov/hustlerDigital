@@ -5,20 +5,36 @@
   background: url("../img/greenbg.png") no-repeat;
   background-size: cover;
   background-position: center;
+  @include xl-d{
+    padding-top: 160px;
+  }
+  @include lg-d{
+    padding-top: 130px;
+  }
+  @include md-d{
+    padding-top: 90px;
+    padding-bottom: 89px;
+  }
   &__img {
     position: absolute;
     position: absolute;
     width: 2440px;
-    z-index: 1;
+    z-index: 6;
     top: -350px;
     left: 57%;
     transform: translateX(-50%);
+    @include md-d{
+      top: -394px;
+    }
   }
   &__wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
     z-index: 2;
+    @include md-d{
+      flex-wrap: wrap;
+    }
   }
   &__box {
     width: 224px;
@@ -26,6 +42,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include md-d{
+      width: 50%;
+    }
   }
   &__main {
     font-family: "mont700";
@@ -33,6 +52,15 @@
     font-weight: 700;
     font-size: 80px;
     line-height: 133.5%;
+    @include xl-d{
+      font-size: 70px;
+    }
+    @include lg-d{
+      font-size: 60px;
+    }
+    @include md-d{
+      font-size: 40px;
+    }
   }
   &__remark {
     font-family: "Montserrat", sans-serif;
@@ -42,5 +70,8 @@
     line-height: 133.5%;
     text-align: center;
     margin-top: 8px;
+    @include md-d{
+      max-width: 180px;
+    }
   }
 }

@@ -26,8 +26,6 @@ $('.slider__right').slick({
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				dots: true,
-				arrows: false,
 				adaptiveHeight: true,
 			}
 		},
@@ -48,8 +46,6 @@ $('.slider__left').slick({
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				dots: true,
-				arrows: false,
 				adaptiveHeight: true,
 			}
 		},

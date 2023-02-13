@@ -1,14 +1,29 @@
 .intro {
   background: url("../img/introbg.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   padding-bottom: 239px;
   overflow: hidden;
+  @include xl-d{
+    padding-bottom: 120px;
+  }
+  @include md-d{
+    padding-bottom: 0;
+  }
   &__container {
     position: relative;
   }
   &__wrapper {
     padding-top: 241px;
+    @include xl-d{
+      padding-top: 184px;
+    }
+    @include md-d{
+      display: flex;
+      flex-direction: column;
+      padding-top: 144px;
+
+    }
   }
   &__title {
     max-width: 840px;
@@ -28,6 +43,12 @@
     color: #ffffff;
     margin-top: 40px;
     max-width: 675px;
+    @include xl-d{
+      margin-top: 32px;
+     }
+  }
+  &__right{
+    align-self: center;
   }
   &__img {
     position: absolute;
@@ -35,13 +56,54 @@
     bottom: -340px;
     width: 593px;
     max-height: 1091px;
+    z-index: 5;
+    @include xl-d{
+     width: 502px;
+     right: -98px;
+     bottom: -170px;
+    }
+    @include lg-d{
+      width: 386px;
+     }
+    @include md-d{
+      position: static;
+      width: 340px;
+      margin-top: 36px;
+      margin-left: -25px;
+    }
+  }
+  &__circle{
+    position: absolute;
+    z-index: 4;
+    width: 751px;
+    bottom: -387px;
+    right: -95px;
+    @include xl-d{
+      width: 636px;
+      bottom: -191px;
+      right: -169px;
+     }
+     @include lg-d{
+      width: 576px;
+      bottom: -253px;
+      right: -227px;
+     }
+     @include md-d{
+      width: 430px;
+      right: 50%;
+      bottom: 0;
+      transform: translateX(50%);
+     }
   }
   &__btn {
     margin-top: 71px;
     position: relative;
     z-index: 5;
-  }
-  &__downline{
-
+    @include xl-d{
+      margin-top: 49px;
+     }
+     @include lg-d{
+      margin-top: 39px;
+     }
   }
 }

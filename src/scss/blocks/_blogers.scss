@@ -112,6 +112,9 @@
         width: 2440px;
         z-index: 1;
         bottom: 88px;
-    left: -170px;
+        left: -170px;
+        @include md-d{
+            left: -600px;
+        }
     }
 }

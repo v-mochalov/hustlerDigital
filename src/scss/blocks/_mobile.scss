@@ -1,6 +1,6 @@
 .mobile {
     background: url("../img/videobg.png") no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     padding-top: 209px;
     padding-bottom: 200px;
@@ -20,13 +20,23 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-
-        img {}
+        @include lg-d{
+            width: 632px;
+        }
+        @include md-d{
+            width: 500px;
+        }
     }
 
     &__title {
         width: 750px;
         z-index: 2;
+        @include md-d{
+            width: 570px;
+        }
+        @include sm-d{
+            width: 387px;
+        }
     }
 
     &__border {

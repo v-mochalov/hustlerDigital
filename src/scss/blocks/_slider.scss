@@ -1,6 +1,6 @@
 .slider {
     background: url("../img/videobg.png") no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     padding-top: 13px;
     padding-bottom: 207px;
@@ -25,11 +25,14 @@
         margin-top: 52px;
         display: flex;
         position: relative;
-
+        @include md-d{
+            flex-direction: column;
+        }
     }
 
     &__left {
         width: 636px;
+        
         .slick-track {
             display: flex !important;
         }
@@ -43,8 +46,14 @@
             overflow: hidden;
             width: 636px;
             @include md-d {
+                padding: 0; 
+            }
+            @include xl-d {
                 padding: 0;
-                
+                width: 543px;
+            }
+            @include lg-d {
+                width: 456px;
             }
         }      
     }
@@ -101,6 +110,9 @@
     &__right{
         margin-top: 183px;
         margin-left: 24px;  
+        @include md-d{
+            position: relative;
+        }
         .slick-track {
             display: flex !important;
         }
@@ -113,9 +125,12 @@
         .slick-list {
             overflow: hidden;
             width: 636px;
-            @include md-d {
+            @include xl-d {
                 padding: 0;
-                
+                width: 543px;
+            }
+            @include lg-d {
+                width: 456px;
             }
         }      
     }  
@@ -140,6 +155,9 @@
         background-repeat: no-repeat;
         transition: 0.2s linear;
         z-index: 9999;
+        @include md-d{
+            transform: translateY(-170px);
+        }
         &:hover{
             opacity: 0.6;
             transition: 0.2s linear;
