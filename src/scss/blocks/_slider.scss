@@ -31,7 +31,7 @@
     }
 
     &__left {
-        width: 636px;
+       
         
         .slick-track {
             display: flex !important;
@@ -47,8 +47,9 @@
             width: 636px;
             @include md-d {
                 padding: 0; 
+                
             }
-            @include xl-d {
+            @include xxl-d {
                 padding: 0;
                 width: 543px;
             }
@@ -63,7 +64,11 @@
         padding-top: 28px;
         padding-bottom: 35px;
         text-align: center;
-
+        @include md-d{
+            padding-top: 24px;
+            padding-bottom: 26px;
+            max-width: 382px;
+        }
         h2 {
             color: $accent;
         }
@@ -78,15 +83,27 @@
         line-height: 36px;
         text-transform: uppercase;
         color: $whiteColor;
+        @include md-d{
+            max-width: 310px;
+            font-size: 12px;
+            line-height: 20px;
+        }
         p{
             margin-bottom: 45px;
+            @include md-d{
+                margin-bottom: 30px;
+            }
             &:last-child{
                 margin-bottom: 0;
             }
+            
         }
     }
     &__bottom{
         margin-top: 56px;
+        @include md-d{
+            margin-top: 32px;
+        }
     }
     &__box{
         font-family: 'Montserrat';
@@ -96,6 +113,12 @@
         line-height: 49px;
         color: $whiteColor;
         margin-top: 32px;
+        &:first-child{
+            margin-top: 0;
+        }
+        @include md-d{
+            margin-top: 16px;
+        }
         span{
             font-family: 'Montserrat';
             font-style: normal;
@@ -110,8 +133,13 @@
     &__right{
         margin-top: 183px;
         margin-left: 24px;  
+        @include xxl-d{
+            margin-left: 51px;
+        }
         @include md-d{
             position: relative;
+            margin-left: 0;
+            margin-top: 100px;
         }
         .slick-track {
             display: flex !important;
@@ -125,12 +153,18 @@
         .slick-list {
             overflow: hidden;
             width: 636px;
-            @include xl-d {
+            @include xxl-d {
                 padding: 0;
                 width: 543px;
+                position: relative;
+                right: 0;
             }
             @include lg-d {
                 width: 456px;
+            }
+            @include md-d{
+                width: 382px;
+                height: 130px;
             }
         }      
     }  
@@ -138,10 +172,27 @@
         width: 636px;
         height: 580px;
         background: #000;
+        @include xxl-d{
+            width: 543px;
+            height: 509px;
+        }
+        @include md-d{
+            width: 382px;
+            height: 130px;
+        }
         img{
             width: 636px;
             height: 580px;
+            @include xxl-d{
+                width: 543px;
+                height: 509px;
+            }
+            @include md-d{
+                width: 382px;
+                height: 130px;
+            }
         }
+        
     }
     
 	.slick-arrow {
@@ -154,9 +205,14 @@
 		display: inline-block;
         background-repeat: no-repeat;
         transition: 0.2s linear;
-        z-index: 9999;
+        z-index: 9995;
+        @include xxl-d{
+            width: 261px;
+        }
         @include md-d{
             transform: translateY(-170px);
+            width: 179px;
+            height: 91px;
         }
         &:hover{
             opacity: 0.6;
@@ -173,7 +229,13 @@
 		background-size: 78px;
 		background-position: center;
 		background-color: transparent;
-        
+        @include xxl-d{
+           right: 247px;
+        }
+        @include md-d{
+            background-size: 44px;
+            right: 164px;
+        }
 	}
 	.slick-next {
 		right: 0px;
@@ -181,6 +243,13 @@
 		background-size: 78px;
 		background-position: center;
 		background-color: transparent;
+        @include xxl-d{
+            // right: -60px;
+        }
+        @include md-d{
+            background-size: 44px;
+
+        }
 	}
 	.slick-arrow.slick-disabled {
 		opacity: 0.2;

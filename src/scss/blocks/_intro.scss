@@ -5,7 +5,10 @@
   padding-bottom: 239px;
   overflow: hidden;
   @include xl-d{
-    padding-bottom: 120px;
+    padding-bottom: 250px;
+  }
+  @include lg-d{
+    padding-bottom: 295px;
   }
   @include md-d{
     padding-bottom: 0;
@@ -15,13 +18,13 @@
   }
   &__wrapper {
     padding-top: 241px;
-    @include xl-d{
+    @include xxl-d{
       padding-top: 184px;
     }
     @include md-d{
-      display: flex;
-      flex-direction: column;
-      padding-top: 144px;
+      // display: flex;
+      // flex-direction: column;
+      // padding-top: 144px;
 
     }
   }
@@ -43,8 +46,15 @@
     color: #ffffff;
     margin-top: 40px;
     max-width: 675px;
-    @include xl-d{
+    @include xxl-d{
       margin-top: 32px;
+     }
+     @include lg-d{
+      font-size: 17px;
+     }
+     @include md-d{
+      margin-top: 24px;
+      font-size: 16px;
      }
   }
   &__right{
@@ -55,15 +65,18 @@
     right: 0;
     bottom: -340px;
     width: 593px;
-    max-height: 1091px;
     z-index: 5;
-    @include xl-d{
+    @include xxl-d{
      width: 502px;
-     right: -98px;
-     bottom: -170px;
+     right: -49px;
+    bottom: -260px;
     }
-    @include lg-d{
-      width: 386px;
+    @include xl-d{
+      right: -150px;
+      bottom: -260px; 
+     }
+     @include lg-d{
+      width: 387px;
      }
     @include md-d{
       position: static;
@@ -99,7 +112,7 @@
     margin-top: 71px;
     position: relative;
     z-index: 5;
-    @include xl-d{
+    @include xxl-d{
       margin-top: 49px;
      }
      @include lg-d{

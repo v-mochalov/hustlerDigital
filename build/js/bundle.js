@@ -1,7 +1,36 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 
-//Acordeon
+//Burger
+function burgerMenu(selector) {
+  var menu = $(selector);
+  var button = menu.find('.burger-menu_button', '.burger-menu_lines');
+  var links = menu.find('.burger-menu_link');
+  var overlay = menu.find('.burger-menu_overlay');
+  button.on('click', function (e) {
+    e.preventDefault();
+    toggleMenu();
+  });
+  links.on('click', function () {
+    return toggleMenu();
+  });
+  overlay.on('click', function () {
+    return toggleMenu();
+  });
+
+  function toggleMenu() {
+    menu.toggleClass('burger-menu_active');
+
+    if (menu.hasClass('burger-menu_active')) {
+      $('body').css('overlow', 'hidden');
+    } else {
+      $('body').css('overlow', 'visible');
+    }
+  }
+}
+
+burgerMenu('.burger-menu'); //Acordeon
+
 $(document).ready(function () {
   $('.block__title').click(function (event) {
     if ($('.block').hasClass('one')) {// $('.block__title').not($(this)).removeClass('active');

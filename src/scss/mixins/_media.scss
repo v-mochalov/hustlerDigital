@@ -75,16 +75,16 @@ $screen-xs-max: 400px;
 $screen-sm-max: 576px;
 
 // Small tablets (portrait view)
-$screen-md-max: 768px;
+$screen-md-max: 767px;
 
 // Tablets and small desktops
-$screen-lg-max: 992px;
+$screen-lg-max: 1023px;
 
 // Large tablets and desktops
-$screen-xl-max: 1332px;
+$screen-xl-max: 1139px;
 
 // Large tablets and desktops
-$screen-xxl-max: 1679px;
+$screen-xxl-max: 1439px;
 
 // Extra Small devices
 @mixin xs-d {

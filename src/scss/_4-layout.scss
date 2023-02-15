@@ -1,5 +1,16 @@
 .container {
-  max-width: 1340px;
+  width: 1296px;
   margin: 0 auto;
-  padding: 0 20px;
+  @include xxl-d{
+    width: 1140px;
+  }
+  @include xl-d{
+    width: 960px;
+  }
+  @include lg-d{
+    width: 720px;
+  }
+  @include md-d{
+    width: 382px;
+  }
 }
