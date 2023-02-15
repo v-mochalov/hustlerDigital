@@ -83,6 +83,10 @@
         line-height: 36px;
         text-transform: uppercase;
         color: $whiteColor;
+        padding-left: 12px;
+        @include md-d{
+            padding-left: 0;
+        }
         @include md-d{
             max-width: 310px;
             font-size: 12px;
@@ -101,6 +105,10 @@
     }
     &__bottom{
         margin-top: 56px;
+        padding-left: 12px;
+        @include md-d{
+            padding-left: 0;
+        }
         @include md-d{
             margin-top: 32px;
         }
