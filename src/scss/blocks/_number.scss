@@ -31,7 +31,9 @@
   &__danger{
     position: absolute;
     width: 2440px;
-
+    @include lg-d{
+      display: none;
+    }
     img{
       position: absolute;
       top: -246px;
