@@ -436,39 +436,29 @@
    <footer class="footer">
       <div class="container">
         <div class="footer__upline">
+          <div class="footer__contain">
           <div class="footer__contacts">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="url(#pattern0)"/>
-              <defs>
-              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0_367_22489" transform="scale(0.01)"/>
-              </pattern>
-              <image id="image0_367_22489" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMC1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi40IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjZCQzYyNjQwODM3MDExRUQ4RTlCRDU4M0IxRTA0MzQzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjZCQzYyNjQxODM3MDExRUQ4RTlCRDU4M0IxRTA0MzQzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NkJDNjI2M0U4MzcwMTFFRDhFOUJENTgzQjFFMDQzNDMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NkJDNjI2M0Y4MzcwMTFFRDhFOUJENTgzQjFFMDQzNDMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz72t+MLAAAE1ElEQVR42uydj2tVZRjHN135I8NSl6YV6RZGaAMjf+VsowyRmRraDxg0FCGM8F/YvyBCYUKsoUhkK81aP9QxS6eM4dSpaDUX0RTF4RRmrtr1++KzsHfPvefcc8859z133y98GLw795zzvt9z7vOc533PVpxKpYoodzSGQ0BDKBpCQygaQkMoGkJDKBpCQygaQtEQGkIFUQlguZd3CEVDaAgVNIbYKuawxKoU7xB+ZVE0hIZQURmyjUbFIpM81Y9oTOkLs74EtWCA4xaJxoEG8LZfQ4xOgNfBVY5fqJoCvgKV6m2Tyrx0sRusAhc4jqGoDHwD5gYN6nPAsXRuUllpMWjLZEY6Q75XbrEfwHqOaWCZsWsBpR5jjef2kRoLPlTah0C9+YYjWbEV/KuM5yfgAbtRM8RrRztBCQfaE3Nhb/dxYfs2xLAe3Fa2+Q48zEFPy0NgvzJud0CttW1WhhiWgmvKdp1gFgd/BDNAuzJefaBK2f5/0tJerfxeDr4Fz1jtPZIWn2fc/m+cmuWn33EKVH7/FSwH7Vb70+AoqKIXRUslrbXNOAWW+b1os6lZXQHVYL/V/qikb7Wj2IwN4BCYpqS15hnuT9978hFDgmYPoz2t9ZuNZh3Ug+bXoyGt/SiECzM0QwzrwICyjx/B5AI2YxI4oPT7L/BOlvsKlGV51Wj2gces9i7JLP4osHjxODgAFljtfWAt+CnL/aW8qr1BVp3MkbTYLpz1ghpwskDMmCfV2qdCrIpHsuqkW9I+++qYCY7IySZdr4CfFTPMvNGS0KYocowhNuPAHmWff4P3Ehwz6sCg0q8mMDHHfYca1DWKJcvQtE1+nxQjvPoyJoRjRG7IMJvlzrD1GRifADMeBI3K+f8DPgjxOLEZYlgJbirHOAwecdgMU8luVs7bVL7fDPlYoae9XnoRfA2mW+3nJNj/7ljwniWZVIXVfh2skdpdmIp9bW+7ZCF2ce05cBy84JAZz8s5VSjF1SURmJFTcTEXXQIvgVarfYa0rXbAjNckbX/Cam8TM36J5SwijiFaoNyVJlC+n8eYsSlNAvI5mBDxsWMN6vlKJZN0Lnk3ZJiNaR629sZwVQ4/xO5Oc7duiXEcnDHEsAL0K+fQBkojPO4U0Koc9xaoiXkMYk97vTRf0swnrfbfJC2+GPLxZksh9Fmr/bIkFx0x99+5V9rOSAm/02o362CPyXx0WFooaa1txlnJpDryPRiuvAfSK4somq32qeAgeCuEY5i5ihZl3uawmO7GA2qeY4iNmYPeEcF8fbrp5gZJxfPZZ6eCeqZUdEg5tx1ZlrvNth9nMNiFyrPzhnjNQZwHlT4+v1y2tTUo+3aln85lWZn0KtgLJiu/M8G5UUovPfct3HsZvAsWKZ/pL7r3asBBh/oYyZx61PPY5p3H8hz3Y2pRb8jiiyJXDUnC27ZdUsJvzKHDn8o+ulzvbFJef74hX0PmWaEJDPn4jNnmC/lMnXxdOa8kfGVpKpOn6mp50h9+tjBvDJ+W5w0zKdadgL6kCsGQQhL/GhBjCEVDaAhFQ2gIRUNoCEVDKBpCQygaQkMoGkJDKBpCQ6j8Sfv/IfyfVLxDKBpCQyi/MYSrTHiHUDSEhlA0hIZQNISGUDSEhlA0hKIhNISiIUnXXQEGAPAMH80VoxIhAAAAAElFTkSuQmCC"/>
-              </defs>
-              </svg>
+            <img src="build/img/icon1.png" alt="statuya">
             <a href="mailto:hustlerdigitalagency@gmail.com">hustlerdigitalagency@gmail.com</a>
           </div>
           <div class="footer__contacts">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <rect width="24" height="24" fill="url(#pattern0)"/>
-              <defs>
-              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0_367_22486" transform="scale(0.01)"/>
-              </pattern>
-              <image id="image0_367_22486" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMC1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi40IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdERDJEQUJGODM3MDExRUQ4RTlCRDU4M0IxRTA0MzQzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdERDJEQUMwODM3MDExRUQ4RTlCRDU4M0IxRTA0MzQzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N0REMkRBQkQ4MzcwMTFFRDhFOUJENTgzQjFFMDQzNDMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6N0REMkRBQkU4MzcwMTFFRDhFOUJENTgzQjFFMDQzNDMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4cQdNFAAAINklEQVR42uxd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"/>
-              </defs>
-              </svg>
-              
+            <img src="build/img/icon2.png" alt="statuya">
+
             <a href="tel:+38(099)999-99-99">+38(099)999-99-99</a>
           </div>
           <div class="footer__contacts">
-          
+            <img src="build/img/icon3.png" alt="statuya">
+
           <a href="#">@hustleragency</a>
           </div>      
           <div class="footer__contacts">
-            
+            <img src="build/img/icon4.png" alt="statuya">
             <a href="#">@hustleragency</a>
-          </div>       
+          </div>
+        </div>  
+        <div class="footer__visible">
+          <img src="build/img/footlogo.png" alt="LOGO">
+        </div>    
       </div>
         <div class="footer__img">
           <img src="build/img/hustler.png" alt="HUSTLER">
