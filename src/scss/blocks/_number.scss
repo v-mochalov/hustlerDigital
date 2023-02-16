@@ -31,16 +31,19 @@
   &__danger{
     position: absolute;
     width: 2440px;
-    @include lg-d{
-      display: none;
-    }
+    
     img{
       position: absolute;
-      top: -246px;
+      top: -258px;
       left: -612px;
       z-index: 3;
       width: 2440px;  
       height: 140px;
+      @include xxl-d{
+        top: -187px;
+        left: -750px;
+        height: 130px;
+      }
       &:first-child{
         transform: rotate(-2.38deg)
       }
