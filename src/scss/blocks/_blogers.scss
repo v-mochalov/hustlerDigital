@@ -4,7 +4,13 @@
     background-size: contain;
     background-position: center;
     padding-bottom: 170px;
-
+    padding-top: 54px;
+    @include xl-d{
+        padding-top: 34px;
+    }
+    @include md-d{
+        padding-top: 40px;
+    }
     &__border {
         position: absolute;
         width: 100vw;
@@ -22,10 +28,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
     }
 
     &__hashtag {
         display: flex;
+        @include xxl-d{
+            display: none;
+        }
     }
 
     &__tag {
@@ -46,6 +56,32 @@
         height: 246px;
         border: 1px solid #000000;
         margin-bottom: 25px;
+        @include xxl-d{
+            width: 259px;
+            height: 209px;
+
+        }
+        @include xl-d{
+            width: 294px;
+            height: 237px;
+
+        }
+        @include lg-d{
+            width: 214px;
+            height: 171px;
+
+        }
+        @include md-d{
+            width: 177px;
+            height: 142px;
+
+        }
+        &:nth-child(6),
+        &:nth-child(7){
+        @include lg-d{
+            display: none;
+        }
+      }        
     }
     &__img{
         img{
@@ -64,6 +100,16 @@
         padding-top: 16px;
         padding-right: 24px;
         justify-content: space-between;
+        @include xxl-d{
+            padding-left: 12px;
+        padding-top: 12px;
+        padding-right: 12px;
+        }
+        @include md-d{
+            padding-top: 6px;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
     }
 
     &__followers {
@@ -73,6 +119,17 @@
         font-size: 16px;
         line-height: 114.5%;
         color: #000000;
+        @include xxl-d{
+            font-size: 14px;
+        }
+        @include lg-d{
+            font-size: 12px;
+        }
+        span{
+            @include md-d{
+                display: none;
+            }
+        }
     }
 
     &__name {
@@ -83,6 +140,12 @@
         line-height: 114.5%;
         color: #000000;
         opacity: 0.5;
+        @include xxl-d{
+            font-size: 14px;
+        }
+        @include lg-d{
+            font-size: 12px;
+        }
     }
 
     &__show-more {
