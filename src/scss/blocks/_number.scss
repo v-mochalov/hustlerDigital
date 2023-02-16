@@ -44,6 +44,10 @@
         left: -750px;
         height: 130px;
       }
+      @include md-d{
+        top: -156px;
+        left: -942px;
+      }
       &:first-child{
         transform: rotate(-2.38deg)
       }
