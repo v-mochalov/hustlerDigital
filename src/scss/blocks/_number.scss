@@ -1,77 +1,70 @@
 .number {
-  position: relative;
-  padding-top: 148px;
-  padding-bottom: 110px;
   background: url("../img/greenbg.png");
   background-size: contain;
   background-position: center;
+  padding-top: 148px;
+  padding-bottom: 110px;
   @include xxl-d{
     padding-top: 124px;
-    padding-bottom: 74px;
+    padding-bottom: 75px;
   }
-  @include xl-d{
-    padding-bottom: 50px;
+  @include xxl-d{
+    padding-top: 87px;
+    padding-bottom: 55px;
   }
   @include lg-d{
-    padding-top: 130px;
+    padding-top: 87px;
+    padding-bottom: 43px;
   }
   @include md-d{
     padding-top: 83px;
-    padding-bottom: 89px;
-  }
-  &__img {
-    position: absolute;
-    position: absolute;
-    width: 2440px;
-    z-index: 6;
-    top: -350px;
-    left: 57%;
-    transform: translateX(-50%);
-    @include md-d{
-      top: -394px;
-    }
+    padding-bottom: 80px;
   }
   &__wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
     @include md-d{
       flex-wrap: wrap;
     }
   }
+  &__danger{
+    position: absolute;
+    width: 2440px;
+
+    img{
+      position: absolute;
+      top: -246px;
+      left: -612px;
+      z-index: 3;
+      width: 2440px;  
+      height: 140px;
+      &:first-child{
+        transform: rotate(-2.38deg)
+      }
+      &:last-child{
+        transform: rotate(6.04deg);
+      }
+    }
+  }
   &__box {
-    width: 224px;
-    height: 157px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    @include xl-d{
-      width: 210px;
-      height: 151px;
-    }
-    @include lg-d{
-      width: 210px;
-      height: 138px;
-    }
     @include md-d{
-      width: 160px;
-      height: 90px;
-      &:nth-child(3) {
-        margin-top: 40px;
-      }
-      &:nth-child(4) {
+      width: 160px; 
+      &:nth-child(4),
+      &:nth-child(5){
         margin-top: 40px;
       }
     }
-   
   }
+
   &__main {
-    font-family: "mont700";
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 133.5%;
+    text-align: center;
     @include xxl-d{
       font-size: 70px;
     }
@@ -82,17 +75,17 @@
       font-size: 40px;
     }
   }
+
   &__remark {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 133.5%;
+    max-width: 210px;
     text-align: center;
-    margin-top: 8px;
     @include lg-d{
       font-size: 14px;
-    line-height: 133.5%;
     }
   }
 }

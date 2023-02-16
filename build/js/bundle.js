@@ -78,6 +78,28 @@ $('.slider__left').slick({
   }]
 });
 gsap.registerPlugin(ScrollTrigger);
+var numbers = document.querySelectorAll('.counters');
+var tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: numbers,
+    start: 'center center',
+    markers: false,
+    toggleActions: 'restart resume '
+  }
+});
+gsap.utils.toArray('.counterTwo').forEach(function (el) {
+  var target = {
+    val: 0
+  };
+  tl.to(target, {
+    val: el.getAttribute('data-number'),
+    duration: 1,
+    onUpdate: function onUpdate() {
+      el.innerText = target.val.toFixed(0);
+    }
+  });
+});
+tl.play();
 gsap.to(".gsap__opacity", {
   scrollTrigger: ".gsap__opacity",
   x: 0,
