@@ -298,6 +298,7 @@ $arrowsColorClose: $whiteColor;
 .block__text {
     padding-left: 10px;
     padding-bottom: 81px;
+    padding-right: 10px;
     display: none;
     color: $openAcordeonTextColor;
     background: $openAcordeonBgColor;
@@ -310,6 +311,7 @@ $arrowsColorClose: $whiteColor;
     text-transform: uppercase;
     @include lg-d{
         padding-left: 8px;
+        padding-right: 8px;
     }
     @include xl-d {
         font-size: 18px;
