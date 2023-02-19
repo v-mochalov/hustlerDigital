@@ -4,6 +4,7 @@
     background-position: center;
     padding-top: 13px;
     padding-bottom: 207px;
+    @include md-d{ padding-bottom: 275px;}
     &__markdown {
         font-style: normal;
         font-weight: 700;
@@ -20,10 +21,23 @@
             margin-left: 47px;
         }
     }
-
+    &__novisible{
+        display: none;
+        @include md-d{
+            display: block;
+            width: 382px;
+            height: 130px;
+            margin-top: 16px;
+            img{
+                width: 382px;
+            height: 130px; 
+            }
+        }
+    }
     &__wrapper {
         margin-top: 52px;
         display: flex;
+        justify-content: space-between;
         position: relative;
         @include md-d{
             flex-direction: column;
@@ -31,8 +45,9 @@
     }
 
     &__left {
-       
-        
+        position: relative;
+        height: 100%;
+        margin-left: 10px;
         .slick-track {
             display: flex !important;
         }
@@ -44,19 +59,26 @@
         }
         .slick-list {
             overflow: hidden;
-            width: 636px;
+            width: 628px;
             @include md-d {
                 padding: 0; 
                 
             }
             @include xxl-d {
                 padding: 0;
-                width: 543px;
+                width: 547px;
             }
-            @include lg-d {
+            @include xl-d{
                 width: 456px;
             }
-        }      
+            @include lg-d {
+                width: 336px;
+            }
+            @include md-d{
+                width: 382px;
+            }
+        }  
+        
     }
 
     &__title {
@@ -64,6 +86,15 @@
         padding-top: 28px;
         padding-bottom: 35px;
         text-align: center;
+        @include xxl-d{
+            font-size: 47px;
+            padding-top: 36px;
+            padding-bottom: 37px;
+        }
+        @include lg-d{
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
         @include md-d{
             padding-top: 24px;
             padding-bottom: 26px;
@@ -71,6 +102,19 @@
         }
         h2 {
             color: $accent;
+            font-size: 55px;    
+            @include xxl-d{
+                font-size: 47px;
+                line-height: 60px;
+
+            }
+            @include xl-d{
+                font-size: 45px;
+            }
+            @include lg-d{
+                font-size: 34px;
+                line-height: 43px;
+            }
         }
     }
 
@@ -83,8 +127,20 @@
         line-height: 36px;
         text-transform: uppercase;
         color: $whiteColor;
-        padding-left: 12px;
+        @include xxl-d{
+            font-size: 20px;
+line-height: 36px;
+        }
+        @include xl-d{
+            font-size: 16px;
+line-height: 32px;
+        }
+        @include lg-d{
+            font-size: 12px;
+line-height: 20px;
+        }
         @include md-d{
+            margin-top: 32px;
             padding-left: 0;
         }
         @include md-d{
@@ -105,12 +161,20 @@
     }
     &__bottom{
         margin-top: 56px;
-        padding-left: 12px;
+        @include xxl-d{
+            margin-top: 82px;
+        }
+        @include xl-d{
+            margin-top: 60px;
+        }
+        @include lg-d{
+            margin-top: 41px;
+        }
         @include md-d{
             padding-left: 0;
         }
         @include md-d{
-            margin-top: 32px;
+            margin-top: 16px;
         }
     }
     &__box{
@@ -124,6 +188,9 @@
         &:first-child{
             margin-top: 0;
         }
+        @include lg-d{
+            margin-top: 24px;
+        }
         @include md-d{
             margin-top: 16px;
         }
@@ -136,18 +203,18 @@
             text-transform: uppercase;
             color: $accent;
             margin-right: 10px;
+            @include lg-d{font-size: 30px;}
         }
     }
     &__right{
         margin-top: 183px;
-        margin-left: 24px;  
-        @include xxl-d{
-            margin-left: 51px;
+        margin-right: 10px;  
+        @include lg-d{
+            margin-top: 134px;
         }
         @include md-d{
-            position: relative;
-            margin-left: 0;
-            margin-top: 100px;
+            display: none;
+
         }
         .slick-track {
             display: flex !important;
@@ -160,15 +227,22 @@
         }
         .slick-list {
             overflow: hidden;
-            width: 636px;
+            width: 628px;
+            height: 580px;
             @include xxl-d {
                 padding: 0;
                 width: 543px;
+                height: 509px;
                 position: relative;
                 right: 0;
             }
-            @include lg-d {
+            @include xl-d{
                 width: 456px;
+            }
+            
+            @include lg-d {
+                width: 336px;
+                height: 463px;
             }
             @include md-d{
                 width: 382px;
@@ -177,23 +251,28 @@
         }      
     }  
     &__content-second{
-        width: 636px;
+        width: 628px;
         height: 580px;
         background: #000;
         @include xxl-d{
             width: 543px;
             height: 509px;
         }
+        @include xl-d{
+            width: 456px;
+        }
         @include md-d{
-            width: 382px;
-            height: 130px;
+            display: none;
         }
         img{
-            width: 636px;
+            width: 628px;
             height: 580px;
             @include xxl-d{
                 width: 543px;
                 height: 509px;
+            }
+            @include xl-d{
+                width: 456px;
             }
             @include md-d{
                 width: 382px;
@@ -217,10 +296,18 @@
         @include xxl-d{
             width: 261px;
         }
+        @include xl-d{
+            width: 216px;
+        }
+        @include lg-d{
+            width: 156px;
+            height: 92px;
+        }
         @include md-d{
             transform: translateY(-170px);
             width: 179px;
             height: 91px;
+            top: 806px;
         }
         &:hover{
             opacity: 0.6;
@@ -231,14 +318,21 @@
         }
 	}
 	.slick-prev {
-		right: 296px;
+		right: 294px;
         margin-right: 39px;
         background-image: url(../img/arr1.png);
 		background-size: 78px;
 		background-position: center;
 		background-color: transparent;
         @include xxl-d{
-           right: 247px;
+           right: 257px;
+        }
+        @include xl-d{
+            right: 212px;
+         }
+        @include lg-d{
+            right: 153px;
+            background-size: 44px;
         }
         @include md-d{
             background-size: 44px;
@@ -246,21 +340,21 @@
         }
 	}
 	.slick-next {
-		right: 0px;
+		right: 10px;
         background-image: url(../img/arr2.png);
 		background-size: 78px;
 		background-position: center;
 		background-color: transparent;
         @include xxl-d{
-            // right: -60px;
+            
+        }@include lg-d{
+            background-size: 44px;
+
         }
         @include md-d{
             background-size: 44px;
 
         }
 	}
-	.slick-arrow.slick-disabled {
-		opacity: 0.2;
-		cursor: default;
-	}
+	
 }

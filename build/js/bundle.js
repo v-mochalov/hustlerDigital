@@ -55,7 +55,8 @@ $('.slider__right').slick({
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      arrows: false
     }
   }]
 });
@@ -69,8 +70,9 @@ $('.slider__left').slick({
   speed: 1000,
   asNavFor: ".slider__right",
   responsive: [{
-    breakpoint: 775,
+    breakpoint: 767,
     settings: {
+      arrows: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: true

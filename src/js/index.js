@@ -55,6 +55,7 @@ $('.slider__right').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				adaptiveHeight: true,
+				arrows: false
 			}
 		},
 	],
@@ -70,8 +71,9 @@ $('.slider__left').slick({
 	asNavFor: ".slider__right",
 	responsive: [
 		{
-			breakpoint: 775,
+			breakpoint: 767,
 			settings: {
+				arrows: true,
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				adaptiveHeight: true,
