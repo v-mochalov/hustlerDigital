@@ -5,12 +5,15 @@
     background-position: center;
     padding-bottom: 170px;
     padding-top: 54px;
-    @include xl-d{
+
+    @include xl-d {
         padding-top: 34px;
     }
-    @include md-d{
+
+    @include md-d {
         padding-top: 40px;
     }
+
     &__border {
         position: absolute;
         width: 100vw;
@@ -28,18 +31,34 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+
+        @include lg-d {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__hashtag {
         display: flex;
-        @include xxl-d{
-            display: none;
+
+        @include lg-d {
+            margin-top: 24px;
+        }
+
+        @include md-d {
+            flex-wrap: wrap;
         }
     }
 
     &__tag {
-        margin-left: 20px;
+        margin-left: 0px;
+        margin-bottom: 0;
+
+        &:last-child {
+            @include md-d {
+                margin-top: 8px;
+            }
+        }
     }
 
     &__content {
@@ -56,56 +75,66 @@
         height: 246px;
         border: 1px solid #000000;
         margin-bottom: 25px;
-        @include xxl-d{
+
+        @include xxl-d {
             width: 259px;
             height: 209px;
 
         }
-        @include xl-d{
+
+        @include xl-d {
             width: 294px;
             height: 237px;
 
         }
-        @include lg-d{
+
+        @include lg-d {
             width: 214px;
             height: 171px;
 
         }
-        @include md-d{
+
+        @include md-d {
             width: 177px;
             height: 142px;
 
         }
+
         &:nth-child(6),
-        &:nth-child(7){
-        @include lg-d{
-            display: none;
+        &:nth-child(7) {
+            @include xl-d {
+                display: none;
+            }
         }
-      }        
     }
-    &__img{
-        img{
+
+    &__img {
+        img {
             filter: grayscale(100%);
             transition: 0.3s linear;
-            &:hover{
+
+            &:hover {
                 filter: grayscale(0%);
                 transition: 0.3s linear;
 
             }
         }
     }
+
     &__downline {
         display: flex;
         padding-left: 24px;
         padding-top: 16px;
         padding-right: 24px;
         justify-content: space-between;
-        @include xxl-d{
+
+        @include xxl-d {
             padding-left: 12px;
-        padding-top: 12px;
-        padding-right: 12px;
+            padding-top: 12px;
+            padding-right: 12px;
         }
-        @include md-d{
+
+        @include md-d {
             padding-top: 6px;
             padding-left: 7px;
             padding-right: 7px;
@@ -119,14 +148,17 @@
         font-size: 16px;
         line-height: 114.5%;
         color: #000000;
-        @include xxl-d{
+
+        @include xxl-d {
             font-size: 14px;
         }
-        @include lg-d{
+
+        @include lg-d {
             font-size: 12px;
         }
-        span{
-            @include md-d{
+
+        span {
+            @include md-d {
                 display: none;
             }
         }
@@ -140,10 +172,12 @@
         line-height: 114.5%;
         color: #000000;
         opacity: 0.5;
-        @include xxl-d{
+
+        @include xxl-d {
             font-size: 14px;
         }
-        @include lg-d{
+
+        @include lg-d {
             font-size: 12px;
         }
     }
@@ -153,30 +187,67 @@
         height: 100%;
         padding: 24px 17px 17px 24px;
         position: relative;
-        &:hover{
+
+        @include lg-d {
+            padding: 16px 13px 13px 16px;
+
+        }
+
+        &:hover {
             cursor: pointer;
         }
+
         p {
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
             line-height: 114.5%;
             color: #000000;
+
+            @include lg-d {
+                font-size: 12px;
+                line-height: 114.5%;
+            }
+            @include md-d{
+                font-size: 10px;
+            }
         }
     }
-    &__arrow{
+
+    &__arrow {
         position: absolute;
         right: 17px;
         bottom: 17px;
+
+        @include lg-d {
+            right: 13px;
+            bottom: 13px;
+
+            svg {
+                width: 56px;
+                height: 56px;
+
+            }
+        }
+        @include md-d {
+            
+            svg {
+                width: 24px;
+                height: 24px;
+
+            }
+        }
     }
-    &__danger{
+
+    &__danger {
         height: 300px;
         position: absolute;
         width: 2440px;
         z-index: 1;
         bottom: 88px;
         left: -170px;
-        @include md-d{
+
+        @include md-d {
             left: -600px;
         }
     }
