@@ -44,7 +44,6 @@ $('.slider__right').slick({
 	arrows: true,
 	fade: true,
 	slidesToShow: 1,
-	initialSlide: 1,
 	slidesToScroll: 1,
 	speed: 1000,
 	asNavFor: ".slider__left",
@@ -65,7 +64,6 @@ $('.slider__left').slick({
 	arrows: false,
 	fade: true,
 	slidesToShow: 1,
-	initialSlide: 1,
 	slidesToScroll: 1,
 	speed: 1000,
 	asNavFor: ".slider__right",
@@ -107,11 +105,12 @@ gsap.utils.toArray('.counterTwo').forEach(function (el) {
   tl.play();
 
 
-gsap.to(".gsap__opacity", {
-	scrollTrigger: ".gsap__opacity",
-	x: 0,
-	duration: 1.5,	
-	stagger: 0.2,
+gsap.to(".gsap__title", {
+	scrollTrigger: ".gsap__title",
+	duration: 1.5,
+	delay: 0.5,	
+	stagger: 0.5,
+	scale: 1,
 	opacity: 1
 });
 gsap.to(".gsap__header", {
@@ -121,62 +120,91 @@ gsap.to(".gsap__header", {
 	stagger: 0.2,
 	opacity: 1
 });
-gsap.to(".gsap__direction--title", {
-	scrollTrigger: ".gsap__direction--title",
-	duration: 1,		
-	stagger: 0.2,
-	opacity: 1,
-	x: 0
+gsap.to(".gsap__video", {
+	scrollTrigger: ".gsap__video",
+	duration: 1.5,
+	delay: 0.5,	
+	stagger: 0.5,
+	scale: 1,
+	opacity: 1
 });
-gsap.to(".gsap__direction--tag", {
-	scrollTrigger: ".gsap__direction--tag",
-	delay: 0.2,
-	duration: 1.5,	
-	stagger: 0.3,
-	opacity: 1,	
-});
-gsap.to(".gsap__benefits--title", {
-	scrollTrigger: ".gsap__benefits--title",
-	duration: 1,		
-	stagger: 0.3,
-	opacity: 1,
-	x: 0
-});
-gsap.to(".gsap__benefits--box", {
-	scrollTrigger: ".gsap__benefits--box",
-	duration: 1.5,		
+gsap.to(".gsap__arrow", {
+	scrollTrigger: ".gsap__arrow",
+	duration: 2.5,
+	delay: 0.5,	
 	stagger: 0.5,
 	opacity: 1,
 	x: 0
+});
+gsap.to(".gsap__service", {
+	scrollTrigger: ".gsap__service",
+	duration: 1.5,
+	delay: 0.5,	
+	stagger: 0.5,
+	scale: 1,
+	opacity: 1
+});
+gsap.to(".gsap__accordeon", {
+	scrollTrigger: ".gsap__accordeon",
+	duration: 1.5,
+	delay: 0.5,	
+	stagger: 0.5,
+	opacity: 1
+});
+gsap.to(".gsap__mark", {
+	scrollTrigger: ".gsap__mark",
+	duration: 80,
+	stagger: 0.5,
+	x: -1000,
+	repeat: -1
+});
+gsap.to(".gsap__slide", {
+	scrollTrigger: ".gsap__slide",
+	duration: 1.5,
+	delay: 0.5,	
+	stagger: 0.5,
+	scale: 1,
+	opacity: 1
+});
+gsap.to(".gsap__blog", {
+	scrollTrigger: ".gsap__blog",
+	duration: 1.5,
+	delay: 0.5,	
+	stagger: 0.5,
+	scale: 1,
+	opacity: 1
+});
+gsap.to(".gsap__blogers", {
+	scrollTrigger: ".gsap__blogers",
+	duration: 1.5,
+	delay: 0.5,	
+	stagger: 0.5,
+	scale: 1,
+	opacity: 1
+});
+gsap.to(".gsap__mobile", {
+	scrollTrigger: ".gsap__mobile",
+	duration: 1.5,
+	delay: 1,	
+	stagger: 1,
+	scale: 1,
+	opacity: 1
 });
 gsap.to(".gsap__form", {
 	scrollTrigger: ".gsap__form",
-	duration: 1.5,		
+	duration: 1.5,
+	delay: 0.5,	
 	stagger: 0.5,
-	opacity: 1,
+	scale: 1,
+	opacity: 1
 });
-gsap.to(".gsap__work--title", {
-	scrollTrigger: ".gsap__work--title",
-	duration: 1,		
-	opacity: 1,
-	x: 0
-});
-gsap.to(".gsap__work--slider", {
-	scrollTrigger: ".gsap__work--slider",
-	duration: 2.5,
-	opacity: 1,
-});
-gsap.to(".gsap__map--title", {
-	scrollTrigger: ".gsap__map--title",
-	duration: 1,		
-	opacity: 1,
-	x: 0
-});
-gsap.to(".gsap__foot", {
-	scrollTrigger: ".gsap__foot",
-	duration: 0.2,		
-	stagger: 0.2,
-	opacity: 1,
+gsap.to(".gsap__footer", {
+	scrollTrigger: ".gsap__footer",
+	duration: 1.5,
+	delay: 0.5,	
+	stagger: 0.5,
+	scale: 1,
+	opacity: 1
 });
 
 		
