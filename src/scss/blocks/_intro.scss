@@ -20,11 +20,14 @@
     position: relative;
   }
   &__title {
+    transform: translate(-300px, 0);
     span {
       text-transform: uppercase;
       color: transparent;
       -webkit-text-stroke: 1px $accent;
       opacity: 1;
+      
+
     }
   }
   &__subtitle {
@@ -35,6 +38,8 @@
     line-height: 150%;
     color: $whiteColor;
     margin-top: 40px;
+    transform: translate(-300px, 0);
+    opacity: 0;
     @include xxl-d{
       margin-top: 32px;
     }
@@ -49,6 +54,8 @@
   }
   &__btn{
     margin-top: 70.5px;
+    transform: translate(-300px, 0);
+    opacity: 0;
     @include xxl-d{
       margin-top: 49px;
     }
@@ -91,6 +98,7 @@
     width: 751px;
     animation: 25s linear 0s normal none infinite running rotate;
     -webkit-animation: 25s linear 0s normal none infinite running rotate;
+    
     @include xxl-d{
       width: 636px;
       right: -101px;

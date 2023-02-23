@@ -4,15 +4,27 @@
     }
     &__title{
         opacity: 0;
-        transform: scale(0);
     }
+    &__intro{
+        opacity: 0;
+        transform: translate(300px, 0);
+    }
+    &__intro-circle{
+        opacity: 0;
+        transform: scale(-0.5);
+    }
+    
     &__video{
+        opacity: 0;
+        transform: translate(-300px, 0);
+    }
+    &__video-img{
         opacity: 0;
         transform: scale(0);
     }
     &__arrow{
         opacity: 0;
-        transform: translate(-400px, 0);
+        transform: translate(-300px, 0);
     }
     &__service{
         opacity: 0;
@@ -24,9 +36,13 @@
     &__mark{
         transform: translate(0, 0);
     }
-    &__slide{
+    &__slider{
         opacity: 0;
-        transform: scale(0);
+        transform: translate(-300px, 0);
+    }
+    &__slider-right{
+        opacity: 0;
+        transform: translate(300px, 0);
     }
     &__blog{
         opacity: 0;
@@ -37,8 +53,7 @@
         transform: scale(0);
     }
     &__mobile{
-        opacity: 0;
-        transform: scale(0);
+        transform: translate(0, 300px);
     }
     &__form{
         opacity: 0;

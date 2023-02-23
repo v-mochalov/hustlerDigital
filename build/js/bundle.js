@@ -103,101 +103,114 @@ tl.play();
 gsap.to(".gsap__title", {
   scrollTrigger: ".gsap__title",
   duration: 1.5,
-  delay: 0.5,
-  stagger: 0.5,
+  // delay: 0.5,	
+  stagger: 0.1,
   scale: 1,
-  opacity: 1
+  opacity: 1,
+  x: 0
+});
+gsap.to(".gsap__intro", {
+  scrollTrigger: ".gsap__intro",
+  duration: 1.5,
+  opacity: 1,
+  x: 0
+});
+gsap.to(".gsap__intro-circle", {
+  scrollTrigger: ".gsap__intro-circle",
+  delay: 1.5,
+  duration: 1,
+  opacity: 1,
+  scale: 1
 });
 gsap.to(".gsap__header", {
   scrollTrigger: ".gsap__header",
-  duration: 1.5,
-  delay: 0.5,
-  stagger: 0.2,
+  duration: 1,
+  delay: 0.2,
   opacity: 1
 });
 gsap.to(".gsap__video", {
   scrollTrigger: ".gsap__video",
-  duration: 1.5,
+  duration: 1,
   delay: 0.5,
-  stagger: 0.5,
-  scale: 1,
+  stagger: 0.1,
+  x: 0,
   opacity: 1
+});
+gsap.to(".gsap__video-img", {
+  scrollTrigger: ".gsap__video-img",
+  duration: 1,
+  opacity: 1,
+  scale: 1
 });
 gsap.to(".gsap__arrow", {
   scrollTrigger: ".gsap__arrow",
-  duration: 2.5,
-  delay: 0.5,
-  stagger: 0.5,
+  duration: 1.2,
   opacity: 1,
   x: 0
 });
 gsap.to(".gsap__service", {
   scrollTrigger: ".gsap__service",
-  duration: 1.5,
-  delay: 0.5,
-  stagger: 0.5,
+  duration: 1,
+  stagger: 0.15,
   scale: 1,
   opacity: 1
 });
 gsap.to(".gsap__accordeon", {
   scrollTrigger: ".gsap__accordeon",
-  duration: 1.5,
-  delay: 0.5,
-  stagger: 0.5,
+  duration: 1,
+  delay: 0.2,
+  stagger: 0.2,
   opacity: 1
 });
 gsap.to(".gsap__mark", {
   scrollTrigger: ".gsap__mark",
-  duration: 80,
-  stagger: 0.5,
-  x: -1000,
+  duration: 40,
+  x: -2000,
   repeat: -1
 });
-gsap.to(".gsap__slide", {
-  scrollTrigger: ".gsap__slide",
-  duration: 1.5,
-  delay: 0.5,
-  stagger: 0.5,
-  scale: 1,
+gsap.to(".gsap__slider", {
+  scrollTrigger: ".gsap__slider",
+  duration: 1,
+  x: 0,
+  opacity: 1
+});
+gsap.to(".gsap__slider-right", {
+  scrollTrigger: ".gsap__slider-right",
+  duration: 1,
+  x: 0,
   opacity: 1
 });
 gsap.to(".gsap__blog", {
   scrollTrigger: ".gsap__blog",
-  duration: 1.5,
-  delay: 0.5,
-  stagger: 0.5,
+  duration: 1,
+  stagger: 0.1,
   scale: 1,
   opacity: 1
 });
 gsap.to(".gsap__blogers", {
   scrollTrigger: ".gsap__blogers",
-  duration: 1.5,
-  delay: 0.5,
-  stagger: 0.5,
+  duration: 1,
+  stagger: 0.1,
   scale: 1,
   opacity: 1
 });
 gsap.to(".gsap__mobile", {
   scrollTrigger: ".gsap__mobile",
   duration: 1.5,
-  delay: 1,
-  stagger: 1,
-  scale: 1,
+  y: 0,
   opacity: 1
 });
 gsap.to(".gsap__form", {
   scrollTrigger: ".gsap__form",
-  duration: 1.5,
-  delay: 0.5,
-  stagger: 0.5,
+  duration: 1,
+  stagger: 0.2,
   scale: 1,
   opacity: 1
 });
 gsap.to(".gsap__footer", {
   scrollTrigger: ".gsap__footer",
-  duration: 1.5,
-  delay: 0.5,
-  stagger: 0.5,
+  duration: 1,
+  stagger: 0.2,
   scale: 1,
   opacity: 1
 });
