@@ -75,11 +75,34 @@
         height: 246px;
         border: 1px solid #000000;
         margin-bottom: 25px;
+        display: none;
 
         @include xxl-d {
             width: 259px;
             height: 209px;
 
+        }
+        &--btn{
+            button{
+                height: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                background: transparent;
+            }
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7) {
+            display: inline-block;
+        }
+
+        &:last-child {
+            display: inline-block;
         }
 
         @include xl-d {
@@ -208,7 +231,8 @@
                 font-size: 12px;
                 line-height: 114.5%;
             }
-            @include md-d{
+
+            @include md-d {
                 font-size: 10px;
             }
         }
@@ -229,8 +253,9 @@
 
             }
         }
+
         @include md-d {
-            
+
             svg {
                 width: 24px;
                 height: 24px;

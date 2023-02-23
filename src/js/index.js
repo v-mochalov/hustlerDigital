@@ -80,6 +80,23 @@ $('.slider__left').slick({
 	],
 });
 
+let loadMoreBtn = document.querySelector('#load-more-btn');
+let currentItem = 7;
+
+loadMoreBtn.onclick = () => {
+    let boxes = [...document.querySelectorAll('.blogers__content .blogers__box')];
+
+    for (var i = currentItem; i < currentItem + 8; i++) {
+        boxes[i].style.display = "inline-block";
+    }
+
+    currentItem += 7;
+
+    if (currentItem >= boxes.length) {
+        loadMoreBtn.style.display = "none"
+    }
+
+}
 
 gsap.registerPlugin(ScrollTrigger);
 const numbers = document.querySelectorAll('.counters');
@@ -197,6 +214,12 @@ gsap.to(".gsap__blogers", {
 	scrollTrigger: ".gsap__blogers",
 	duration: 1,
 	stagger: 0.1,
+	scale: 1,
+	opacity: 1
+});
+gsap.to(".gsap__blogers-btn", {
+	scrollTrigger: ".gsap__blogers",
+	duration: 1.5,
 	scale: 1,
 	opacity: 1
 });
